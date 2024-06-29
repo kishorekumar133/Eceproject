@@ -1,0 +1,59 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <title>TransformDemo</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Transform Demo</h1>-->
+<!--<p th:text="${message}"></p>-->
+<!--<a href="/">Go back</a>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TransformDemo</title>
+    <style>
+        body {
+           /* Replace with your image path */
+            background-size: cover; /* Ensure the background image covers the entire viewport */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+            font-family: Arial, sans-serif; /* Choose a suitable font-family */
+            color: #333; /* Text color */
+            text-align: center; /* Center align text */
+            padding: 20px; /* Add padding to the body */
+        }
+        h1 {
+            color: #fff; /* Header text color */
+        }
+        p {
+            margin: 20px auto; /* Margin for the paragraph */
+            max-width: 600px; /* Limit paragraph width */
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 10px; /* Padding inside the paragraph */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+        }
+        a {
+            color: #4CAF50; /* Link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Bold font */
+            margin-top: 20px; /* Margin above the link */
+            display: inline-block; /* Display as block */
+        }
+        a:hover {
+            color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+<h1>Transform Demo</h1>
+<img src="ece2.jpg" alt="ECE Image" style="width: 100%; max-width: 300px; margin-bottom: 20px;">
+<p th:text="${message}"></p>
+<a href="/excel">Excel</a>
+<br>
+<a href="/">Go back</a>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <title>TransformDemo</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Transform Demo</h1>-->
+<!--<form action="/generate" method="post">-->
+<!--    <label for="numSets">Enter the number of sets of data:</label>-->
+<!--    <input type="number" id="numSets" name="numSets" required>-->
+<!--    <button type="submit">Generate Excel</button>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TransformDemo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Ensure full viewport height */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in height calculation */
+        }
+        .form-content {
+            max-width: 400px; /* Limit form width */
+            width: 100%; /* Full width of parent */
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #fff; /* Header text color */
+            margin-bottom: 20px; /* Margin below heading */
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"], button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 style="color: #fff;">Transform Demo</h1>
+    <form action="/generate" method="post" class="form-content">
+        <img src="ece.jpg" alt="ECE Image" style="width: 100%; max-width: 300px; margin-bottom: 20px;"> <!-- Image tag added here -->
+        <label for="numSets" style="display: block; margin-bottom: 10px;">Enter the number of sets of data:</label>
+        <input type="number" id="numSets" name="numSets" required style="width: calc(100% - 20px); padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+        <button type="submit" style="background-color: #4CAF50; color: white; border: none; padding: 10px; cursor: pointer; width: calc(100% - 20px); border-radius: 5px;">Generate Excel</button>
+    </form>
+</div>
+</body>
+</html>
+
